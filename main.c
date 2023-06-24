@@ -22,10 +22,10 @@ int main() {
     init_pair(5, COLOR_CYAN, COLOR_BLACK);
     init_pair(6, COLOR_RED, COLOR_BLACK);
 
-    bool playPressed = start();
+    int optionSelected = start();
     erase();
     refresh();
-    if (playPressed) {
+    if (optionSelected == 0) {
         introduction();
         stageOne();
     }

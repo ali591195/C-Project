@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <ncurses.h>
 
-void windowColorText(WINDOW *window, int colorPair, int height, int width, const char text[]) {
+void mvwcolorText(WINDOW *window, int colorPair, int height, int width, const char text[]) {
     wattrset(window, COLOR_PAIR(colorPair));
     mvwprintw(window, height, width, text);
     wattroff(window, COLOR_PAIR(colorPair));
@@ -21,12 +21,12 @@ WINDOW *titleWindow(int height, int width, int y) {
 
     //Border Creation and Cursor movement
     box(titleWindow, 0, 0);
-    windowColorText(titleWindow, 5, titleWindowHeight / 2, titleWindowWidth / 6, "Lost in the Enchanted Forest");
+    mvwcolorText(titleWindow, 5, titleWindowHeight / 2, titleWindowWidth / 6, "Lost in the Enchanted Forest");
     wrefresh(titleWindow);
 
     return titleWindow;
 }
-bool options (int height, int width, int y) {
+int options (int height, int width, int y) {
     // Option buttons specs
     int optionHeight = height;
     int optionWidth = width;
@@ -39,47 +39,74 @@ bool options (int height, int width, int y) {
     
     box(option, 0, 0);
     
-    windowColorText(option, 1,  2, 5, "Play");
-    mvwprintw(option, 2, 15, "Option");
-    mvwprintw(option, 2, 30, "Quit");
+    mvwcolorText(option, 1,  2, 6, "Play");
+    mvwprintw(option, 2, 16, "Option");
+    mvwprintw(option, 2, 28, "Quit");
     wrefresh(option);
 
-    bool playPressed = false;
+    int optionSelected = 2;
     int ch;
     int countOption = 0;
     while((ch = getch()) != 27) {
-        if((ch == KEY_LEFT || ch == 'a' || ch == 'A') && countOption == 1) {
-            windowColorText(option, 1,  optionHeight / 2, optionWidth / 4, "Play");
-            mvwprintw(option, optionHeight / 2, optionWidth / 1.6, "Quit");
-            wrefresh(option);
-            countOption = 0;
+        if(ch == KEY_RIGHT || ch == 'd' || ch == 'D') {
+            if(countOption == 0) {
+                mvwprintw(option, 2, 6, "Play");
+                mvwcolorText(option, 1,  2, 16, "Option");
+                mvwprintw(option, 2, 28, "Quit");
+                wrefresh(option);
+                countOption = 1;
+            }
+            else if (countOption == 1) {
+                mvwprintw(option, 2, 6, "Play");
+                mvwprintw(option, 2, 16, "Option");
+                mvwcolorText(option, 1,  2, 28, "Quit");
+                wrefresh(option);
+                countOption = 2;
+            }
         }
-        else if((ch == KEY_RIGHT || ch == 'd' || ch == 'D') && countOption == 0) {
-            mvwprintw(option, optionHeight / 2, optionWidth / 4, "Play");
-            windowColorText(option, 1, optionHeight / 2, optionWidth / 1.6, "Quit");
-            wrefresh(option);
-            countOption = 1;
+        else if(ch == KEY_LEFT || ch == 'a' || ch == 'A') {
+            if(countOption == 1) {
+                mvwcolorText(option, 1,  2, 6, "Play");
+                mvwprintw(option, 2, 16, "Option");
+                mvwprintw(option, 2, 28, "Quit");
+                wrefresh(option);
+                countOption = 0;
+            }
+            else if(countOption == 2) {
+                mvwprintw(option, 2, 6, "Play");
+                mvwcolorText(option, 1,  2, 16, "Option");
+                mvwprintw(option, 2, 28, "Quit");
+                wrefresh(option);
+                countOption = 1;
+            }
         }
-        else if ((ch == KEY_ENTER || ch == '\n') && countOption == 0) {
-            playPressed = true;
-            break;
-        }
-        else if ((ch == KEY_ENTER || ch == '\n') && countOption == 1) {
-            break;
+        else if (ch == KEY_ENTER || ch == '\n') {
+            if(countOption == 0) {
+                optionSelected = 0;
+                break;
+            }
+            else if(countOption == 1) {
+                optionSelected = 1;
+                break;
+            }
+            else if(countOption == 2) {
+                optionSelected = 2;
+                break;
+            }
         }
     }
     
     delwin(option);
 
-    return playPressed;
+    return optionSelected;
 }
 
-bool start() {
+int start() {
     WINDOW *TitleWindow = titleWindow(5, 40, 0);
-    bool playPressed = options(5, 45, 5);
+    int optionSelected = options(5, 38, 5);
 
     delwin(TitleWindow);
     refresh();
 
-    return playPressed;
+    return optionSelected;
 }
