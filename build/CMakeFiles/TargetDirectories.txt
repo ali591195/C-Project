@@ -1,0 +1,3 @@
+C:/Users/Hunani Tradings/C Project/build/CMakeFiles/program.dir
+C:/Users/Hunani Tradings/C Project/build/CMakeFiles/edit_cache.dir
+C:/Users/Hunani Tradings/C Project/build/CMakeFiles/rebuild_cache.dir

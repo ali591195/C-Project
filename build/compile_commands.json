@@ -1,0 +1,38 @@
+[
+{
+  "directory": "C:/Users/Hunani Tradings/C Project/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/program.dir/includes_C.rsp -g -o CMakeFiles\\program.dir\\main.c.obj -c \"C:\\Users\\Hunani Tradings\\C Project\\main.c\"",
+  "file": "C:/Users/Hunani Tradings/C Project/main.c",
+  "output": "CMakeFiles/program.dir/main.c.obj"
+},
+{
+  "directory": "C:/Users/Hunani Tradings/C Project/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/program.dir/includes_C.rsp -g -o CMakeFiles\\program.dir\\modules\\sources\\utility\\clearScreen.c.obj -c \"C:\\Users\\Hunani Tradings\\C Project\\modules\\sources\\utility\\clearScreen.c\"",
+  "file": "C:/Users/Hunani Tradings/C Project/modules/sources/utility/clearScreen.c",
+  "output": "CMakeFiles/program.dir/modules/sources/utility/clearScreen.c.obj"
+},
+{
+  "directory": "C:/Users/Hunani Tradings/C Project/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/program.dir/includes_C.rsp -g -o CMakeFiles\\program.dir\\modules\\sources\\startup\\start.c.obj -c \"C:\\Users\\Hunani Tradings\\C Project\\modules\\sources\\startup\\start.c\"",
+  "file": "C:/Users/Hunani Tradings/C Project/modules/sources/startup/start.c",
+  "output": "CMakeFiles/program.dir/modules/sources/startup/start.c.obj"
+},
+{
+  "directory": "C:/Users/Hunani Tradings/C Project/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/program.dir/includes_C.rsp -g -o CMakeFiles\\program.dir\\modules\\sources\\startup\\introduction.c.obj -c \"C:\\Users\\Hunani Tradings\\C Project\\modules\\sources\\startup\\introduction.c\"",
+  "file": "C:/Users/Hunani Tradings/C Project/modules/sources/startup/introduction.c",
+  "output": "CMakeFiles/program.dir/modules/sources/startup/introduction.c.obj"
+},
+{
+  "directory": "C:/Users/Hunani Tradings/C Project/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/program.dir/includes_C.rsp -g -o CMakeFiles\\program.dir\\modules\\sources\\utility\\colorText.c.obj -c \"C:\\Users\\Hunani Tradings\\C Project\\modules\\sources\\utility\\colorText.c\"",
+  "file": "C:/Users/Hunani Tradings/C Project/modules/sources/utility/colorText.c",
+  "output": "CMakeFiles/program.dir/modules/sources/utility/colorText.c.obj"
+},
+{
+  "directory": "C:/Users/Hunani Tradings/C Project/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/program.dir/includes_C.rsp -g -o CMakeFiles\\program.dir\\modules\\sources\\stages\\stageOne.c.obj -c \"C:\\Users\\Hunani Tradings\\C Project\\modules\\sources\\stages\\stageOne.c\"",
+  "file": "C:/Users/Hunani Tradings/C Project/modules/sources/stages/stageOne.c",
+  "output": "CMakeFiles/program.dir/modules/sources/stages/stageOne.c.obj"
+}
+]

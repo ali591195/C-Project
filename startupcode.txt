@@ -1,0 +1,4 @@
+gcc "Lost in the Enchanted Forest.c"  ./modules/sources/"Clear Screen.c" -o program
+C:\msys64\mingw64\include\ncurses
+C:\Users\Hunani Tradings\C Project\modules\sources
+../../../../../msys64\mingw64\include\ncurses

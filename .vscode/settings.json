@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "clear screen.h": "c",
+        "clearscreen.h": "c",
+        "start.h": "c",
+        "stdlib.h": "c"
+    }
+}
