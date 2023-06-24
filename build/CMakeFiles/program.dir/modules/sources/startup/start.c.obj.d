@@ -30,4 +30,6 @@ CMakeFiles/program.dir/modules/sources/startup/start.c.obj: \
  C:/msys64/mingw64/include/stdarg.h \
  C:/msys64/mingw64/include/_mingw_stdarg.h \
  C:/msys64/mingw64/include/ncursesw/unctrl.h \
- C:/msys64/mingw64/include/ncursesw/curses.h
+ C:/msys64/mingw64/include/ncursesw/curses.h \
+ C:/msys64/mingw64/include/string.h \
+ C:/msys64/mingw64/include/sec_api/string_s.h

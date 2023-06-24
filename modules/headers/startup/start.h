@@ -2,6 +2,11 @@
 #ifndef START_H
     #define START_H
 
-    int start();
+    struct OptionSelect {
+        bool play;
+        bool options;
+    };
+
+    struct OptionSelect start();
 
 #endif

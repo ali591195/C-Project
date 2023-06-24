@@ -126,11 +126,13 @@ CMakeFiles/program.dir/modules/sources/startup/start.c.obj: C:/Users/Hunani\ Tra
   C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
   C:/msys64/mingw64/include/sec_api/stdio_s.h \
   C:/msys64/mingw64/include/sec_api/stdlib_s.h \
+  C:/msys64/mingw64/include/sec_api/string_s.h \
   C:/msys64/mingw64/include/stdarg.h \
   C:/msys64/mingw64/include/stddef.h \
   C:/msys64/mingw64/include/stdint.h \
   C:/msys64/mingw64/include/stdio.h \
   C:/msys64/mingw64/include/stdlib.h \
+  C:/msys64/mingw64/include/string.h \
   C:/msys64/mingw64/include/swprintf.inl \
   C:/msys64/mingw64/include/vadefs.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
@@ -220,8 +222,6 @@ C:/Users/Hunani\ Tradings/C\ Project/modules/headers/stages/stageOne.h:
 
 C:/Users/Hunani\ Tradings/C\ Project/modules/headers/utility/clearScreen.h:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/libgcc.a:
-
 C:/Users/Hunani\ Tradings/C\ Project/modules/headers/startup/introduction.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h:
@@ -302,8 +302,6 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h:
 
 C:/msys64/mingw64/include/vadefs.h:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o:
-
 C:/msys64/mingw64/lib/libwinspool.a:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h:
@@ -320,6 +318,12 @@ C:/Users/Hunani\ Tradings/C\ Project/modules/sources/startup/introduction.c:
 
 C:/Users/Hunani\ Tradings/C\ Project/modules/sources/startup/start.c:
 
+C:/msys64/mingw64/include/sec_api/string_s.h:
+
+C:/msys64/mingw64/lib/libpthread.dll.a:
+
+C:/msys64/mingw64/include/string.h:
+
 C:/msys64/mingw64/lib/liboleaut32.a:
 
 C:/Users/Hunani\ Tradings/C\ Project/modules/sources/utility/colorText.c:
@@ -334,11 +338,13 @@ C:/msys64/mingw64/lib/libmingwex.a:
 
 C:/msys64/mingw64/lib/libmsvcrt.a:
 
-C:/msys64/mingw64/lib/libpthread.dll.a:
-
 C:/msys64/mingw64/lib/libuuid.a:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/libgcc.a:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/libgcc_eh.a:
 
